@@ -5,7 +5,7 @@ export const searchSchema = celebrate(
     [Segments.QUERY]: Joi.object().keys({
       query: Joi.string().required(),
       page: Joi.string().default(1),
-      limit: Joi.string().default(10),
+      limit: Joi.string().default(10000),
     }),
   },
   { abortEarly: false },
